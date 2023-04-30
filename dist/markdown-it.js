@@ -6281,7 +6281,7 @@
       content = state.src.slice(labelStart, labelEnd);
       state.md.inline.parse(content, state.md, state.env, tokens = []);
       token = state.push("image", "img", 0);
-      token.attrs = attrs = [ [ "src", href ], [ "alt", "" ] ];
+      token.attrs = attrs = [ [ "src", href ], [ "alt", "" ] ,["referrerpolicy","no-referrer"]];
       token.children = tokens;
       token.content = content;
       if (title) {
